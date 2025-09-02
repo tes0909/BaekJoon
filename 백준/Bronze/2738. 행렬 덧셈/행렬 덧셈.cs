@@ -4,21 +4,15 @@ int M = numbers[1];
 
 int[,] result = new int[N, M];
 
-for (int i = 0; i < N; i++)
+for (int k = 0; k < 2; k++)
 {
-    int[] row = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-    for (int j = 0; j < M; j++)
+    for (int i = 0; i < N; i++)
     {
-        result[i, j] += row[j];
-    }
-}
-
-for (int i = 0; i < N; i++)
-{
-    int[] row = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-    for (int j = 0; j < M; j++)
-    {
-        result[i, j] += row[j];
+        int[] row = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        for (int j = 0; j < M; j++)
+        {
+            result[i, j] += row[j];
+        }
     }
 }
 
